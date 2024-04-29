@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "91c93902-d966-4e6b-8775-b1e8dbd5d0ed",
+		"name": "Rabbitmq_Learning",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1545094"
+	},
+	"item": [
+		{
+			"name": "order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderIdentifier\": \"Fruit\",\r\n    \"orderId\": \"1\",\r\n    \"customerName\": \"Binod\",\r\n    \"orderList\": [\r\n        \"Mango\",\"Apple\",\"Banana\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9093/rabbitmq/sender",
+					"host": [
+						"localhost"
+					],
+					"port": "9093",
+					"path": [
+						"rabbitmq",
+						"sender"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
